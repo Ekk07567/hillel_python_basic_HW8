@@ -4,13 +4,12 @@
 # str = input('Введите строку:')
 # upper_case = any([True if i in string.ascii_uppercase else False for i in str])
 # lower_case = any([True if i in string.ascii_lowercase else False for i in str])
-# punctuation = any([True if i in string.punctuation else False for i in str])
+# space = any([True if ' ' in str else False])
 # digits = any([True if i in string.digits else False for i in str])
-# if (upper_case, lower_case, punctuation, digits) == (True, True, True, True):
+# if (upper_case, lower_case, space, digits) == (True, True, True, True):
 #     print('Yes')
 # else:
 #     print('No')
-#
 #
 # """Задание 2"""
 # n1 = 1    #Первое число в ряду фибоначчи
@@ -30,18 +29,18 @@
 # password = input('Введите пароль:')
 # punctuations = r"""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""
 #
-# upper_case = any([True if i in string.ascii_uppercase else False for i in password])
-# lower_case = any([True if i in string.ascii_lowercase else False for i in password])
-# punctuation = any([True if i in string.punctuation else False for i in password])
-# digits = any([True if i in string.digits else False for i in password])
+# upper_case = [True if i in string.ascii_uppercase else False for i in password]
+# lower_case = [True if i in string.ascii_lowercase else False for i in password]
+# punctuation = [True if i in string.punctuation else False for i in password]
+# digits = [True if i in string.digits else False for i in password]
 # length = len(password)
 #
 # characters = [upper_case, lower_case, punctuation, digits]
-# print(characters)
+#
 #
 # password_difficulty_mark = 1
 # for i in range(len(characters)):
-#     if characters[i] and password != "admin" and "qwerty" and " ":
+#     if characters[i] and password != "admin" and "qwerty" and "":
 #         password_difficulty_mark += 1
 # if length <= 8:
 #     password_difficulty_mark -= 1
